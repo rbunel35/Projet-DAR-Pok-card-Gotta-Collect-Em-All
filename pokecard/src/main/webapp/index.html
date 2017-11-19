@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Pokecard</title>
+<meta name="description" content="Pokecard">
+<meta name="author" content="Kimarotec">
+<meta name="keyword"
+	content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800'
+	rel='stylesheet' type='text/css'>
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+<link rel="stylesheet" href="assets/css/normalize.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/fontello.css">
+<link href="assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css"
+	rel="stylesheet">
+<link href="assets/fonts/icon-7-stroke/css/helper.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/icheck.min_all.css">
+<link rel="stylesheet" href="assets/css/price-range.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" href="assets/css/owl.theme.css">
+<link rel="stylesheet" href="assets/css/owl.transitions.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div id="modalBody" class="modal-body">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<style>
+.carousel-inner>.item>img {
+	margin: 0 auto;
+}
+</style>
+						<div class="carousel-inner">
+							<div class="item active" id="cardImage"></div>
+
+						</div>
+
+						<!-- Left and right controls ->
+						<a class="left carousel-control" href="#myCarousel"
+							data-slide="prev"> <span
+							class="glyphicon glyphicon-chevron-left"></span> <span
+							class="sr-only">Previous</span>
+						</a> <a class="right carousel-control" href="#myCarousel"
+							data-slide="next"> <span
+							class="glyphicon glyphicon-chevron-right"></span> <span
+							class="sr-only">Next</span>
+						</a-->
+					</div>
+
+					<div class="section additional-details">
+						<h4 class="s-property-title" id="cardTitle">Pikachu</h4>
+						<ul class="additional-details-list clearfix">
+
+							<li><span class="col-xs-6 col-sm-4 col-md-4 add-d-title">Extention</span>
+								<span class="col-xs-6 col-sm-8 col-md-8 add-d-entry"
+								id="cardExtention"></span></li>
+							<li><span class="col-xs-6 col-sm-4 col-md-4 add-d-title">numero</span>
+								<span class="col-xs-6 col-sm-8 col-md-8 add-d-entry"
+								id="cardNumber"></span></li>
+							<li><span class="col-xs-6 col-sm-4 col-md-4 add-d-title">Prix
+									en €</span> <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry"
+								id="cardPrice"></span></li>
+
+						</ul>
+					</div>
+
+
+				</div>
+				<div class="modal-footer">
+					<div id="searchOfOwn"></div>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
+	<!-- Body content -->
+
+
+	<div class="header-connect" id="header">
+		<!-- HEADER TELEPHONE & MAIL -->
+	</div>
+	<!--End top header -->
+
+	<nav class="navbar navbar-default" id="menu">
+		<!-- NAVIGATION BAR -->
+	</nav>
+
+	<div class="page-head" id="helloUser"></div>
+
+
+	<!--  >div class="page-head" style="background-color: #FFF;">
+		<div class="container"></div>
+	</div-->
+	<!-- End page header -->
+
+	<!-- property area -->
+	<div class="properties-area recent-property"
+		style="background-color: #FFF;">
+		<div class="container">
+			<div class="col-md-12 padding-bottom-40 large-search">
+				<div class="search-form wow pulse">
+					<form class=" form-inline" action="javascript:searchCard();">
+						<div class="col-md-12">
+							<div class="col-md-9">
+								<input type="text" class="form-control"
+									placeholder="pokemon name" style="color: #000;"
+									id="searchPokemonName">
+							</div>
+							
+							
+							<div class="col-md-3">
+								<div class="text-center">
+									<button type="submit" class="btn btn-default">Search</button>
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="addBasketAlert"></div>
+				<!-- div class="col-md-12  <!--pr0 padding-top-40 properties-page">
+					<div id="addBasketAlert"></div>
+					<div class="col-md-12 clear">
+						<div class="col-xs-10 page-subheader sorting pl0">
+							
+							<ul class="sort-by-list">
+								<li class="active"><a href="javascript:void(0);"
+									class="order_by_date" data-orderby="property_date"
+									data-order="ASC"> Date <i class="fa fa-sort-amount-asc"></i>
+								</a></li>
+								<li class=""><a href="javascript:void(0);"
+									class="order_by_price" data-orderby="property_price"
+									data-order="DESC"> Prix <i class="fa fa-sort-numeric-desc"></i>
+								</a></li>
+							</ul>
+							<!--/ .sort-by-list->
+
+							<div class="items-per-page">
+								<label for="items_per_page"><b>Carte par page :</b></label>
+								<div class="sel">
+									<select id="items_per_page" name="per_page">
+										<option value="3">3</option>
+										<option value="6">6</option>
+										<option value="9">9</option>
+										<option selected="selected" value="12">12</option>
+										<option value="15">15</option>
+										<option value="30">30</option>
+										<option value="45">45</option>
+										<option value="60">60</option>
+									</select>
+								</div>
+								<!--/ .sel->
+							</div>
+							<!--/ .items-per-page->
+						</div>
+
+						<div class="col-xs-2 layout-switcher">
+							<a class="layout-list" href="javascript:void(0);"> <i
+								class="fa fa-th-list"></i>
+							</a> <a class="layout-grid active" href="javascript:void(0);"> <i
+								class="fa fa-th"></i>
+							</a>
+						</div>
+						<!--/ .layout-switcher->
+					</div>-->
+				<div class="col-md-12 clear">
+					<div id="list-type" class="proerty-th"></div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="pull-right">
+					<div class="pagination">
+						<!-- ul>
+								<li><a href="#">Prev</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">Next</a></li>
+							</ul -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<!-- Footer area-->
+	<div class="footer-area" id="footer"></div>
+
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
+
+
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap-select.min.js"></script>
+	<script src="assets/js/bootstrap-hover-dropdown.js"></script>
+	<script src="assets/js/easypiechart.min.js"></script>
+	<script src="assets/js/jquery.easypiechart.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/wow.js"></script>
+	<script src="assets/js/icheck.min.js"></script>
+	<script src="assets/js/price-range.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

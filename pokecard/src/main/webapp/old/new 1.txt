@@ -1,0 +1,9 @@
+- Etude de l'etat de l'art
+- Etude de l'existant
+- Definition des modules à implémenter
+- hipchat
+- bitbucket & analyse du code existant
+- Visual studio
+- Conception prémilimaire
+- choix technique
+- prototypage

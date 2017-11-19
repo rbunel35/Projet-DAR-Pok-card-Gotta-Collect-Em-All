@@ -1,0 +1,41 @@
+<div class="container">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed"
+			data-toggle="collapse" data-target="#navigation">
+			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+			<span class="icon-bar"></span> <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/"> <!-- <img
+			src="assets/img/pokecard.png" alt=""> --> Pokecard
+		</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse yamm" id="navigation">
+		<div class="button navbar-right">
+			<button class="navbar-btn nav-button wow bounceInRight login"
+				onclick=" window.open('/messages')" data-wow-delay="0.4s" id="messagesNav">Messages</button>
+			<button class="navbar-btn nav-button wow bounceInRight login"
+				onclick="location.href='/log'" data-wow-delay="0.4s" id="login">Connexion/Inscription</button>
+			<button class="navbar-btn nav-button wow fadeInRight"
+				onclick="logout()" data-wow-delay="0.5s" id="logout">Deconnexion</button>
+		</div>
+		<ul class="main-nav nav navbar-nav navbar-right">
+			<li class="wow fadeInDown" data-wow-delay="0.1s"><a class=""
+				href="/">Accueil</a></li>
+			
+			<li class="wow fadeInDown" data-wow-delay="0.1s"><a class=""
+				href="/BASKET" id="basketNav">Panier</a></li>
+			
+			<li class="wow fadeInDown" data-wow-delay="0.1s"><a class=""
+				href="/meet" id="meetingsNav">Rendez Vous</a></li>
+			<!--  <li class="wow fadeInDown" data-wow-delay="0.1s" id="searchNav"><a
+				class="" href="/forum" id="searchNav">Forum</a></li>
+			<li class="wow fadeInDown" data-wow-delay="0.4s"><a
+				href="/contact">Contact</a></li> -->
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<script src="js/menu.js"></script>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Pokecard</title>
+<meta name="description" content="Pokecard">
+<meta name="author" content="Kimarotec">
+<meta name="keyword"
+	content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800'
+	rel='stylesheet' type='text/css'>
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<link rel="stylesheet" href="assets/chat.css">
+<link rel="stylesheet" href="assets/css/normalize.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/fontello.css">
+<link href="assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css"
+	rel="stylesheet">
+<link href="assets/fonts/icon-7-stroke/css/helper.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/icheck.min_all.css">
+<link rel="stylesheet" href="assets/css/price-range.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" href="assets/css/owl.theme.css">
+<link rel="stylesheet" href="assets/css/owl.transitions.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/chat.css">
+</head>
+<body>
+
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
+	<!-- Body content -->
+
+
+	<div class="header-connect" id="header">
+		<!-- HEADER TELEPHONE & MAIL -->
+	</div>
+	<!--End top header -->
+
+	<nav class="navbar navbar-default" id="menu">
+		<!-- NAVIGATION BAR -->
+	</nav>
+
+
+	<!--  >div class="page-head" style="background-color: #FFF;">
+		<div class="container"></div>
+	</div-->
+	<!-- End page header -->
+
+	<!-- property area -->
+	<div class="content-area recent-Cartes"
+		style="padding-bottom: 60px; background-color: rgb(252, 252, 252);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12  padding-top-40 properties-page">
+					<div id="list-type" class="proerty-th">
+						<div class="register-area"
+							style="background-color: rgb(249, 249, 249);">
+							<div class="container">
+
+
+								<script src="https://use.fontawesome.com/45e03a14ce.js"></script>
+								<div class="main_section">
+									<div class="container">
+										<div class="chat_container">
+											<div class="col-sm-3 chat_sidebar">
+												<div class="row">
+													<div id="custom-search-input">
+														<div class="input-group col-md-12">
+															<input type="text" class="  search-query form-control"
+																placeholder="Conversation" />
+															<button class="btn btn-danger" type="button">
+																<span class=" glyphicon glyphicon-search"></span>
+															</button>
+														</div>
+													</div>
+													<div class="dropdown all_conversation">
+														<button class="dropdown-toggle" type="button"
+															id="dropdownMenu2" data-toggle="dropdown"
+															aria-haspopup="true" aria-expanded="false">
+															<i class="fa fa-weixin" aria-hidden="true"></i> All
+															Conversations <span class="caret pull-right"></span>
+														</button>
+
+													</div>
+													<div class="member_list">
+														<ul class="list-unstyled" id="chatList">
+
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!--chat_sidebar-->
+
+
+											<div class="col-sm-9 message_section">
+												<div class="row">
+													<div class="new_message_head">
+														<div class="pull-left">
+															<div>
+																<p id="MessageTitle"></p> 
+																<p id="saveChatId">cdfcdf</p>
+															</div>
+															<!-- 
+															<button>
+																<i class="fa fa-plus-square-o" aria-hidden="true"></i>
+																New Message
+															</button>
+															 -->
+														</div>
+														<!--
+														<div class="pull-right">
+															<div class="dropdown">
+																<button class="dropdown-toggle" type="button"
+																	id="dropdownMenu1" data-toggle="dropdown"
+																	aria-haspopup="true" aria-expanded="false">
+																	<i class="fa fa-cogs" aria-hidden="true"></i> Setting <span
+																		class="caret"></span>
+																</button>
+																<ul class="dropdown-menu dropdown-menu-right"
+																	aria-labelledby="dropdownMenu1">
+																	<li><a href="#">Action</a></li>
+																	<li><a href="#">Profile</a></li>
+																	<li><a href="#">Logout</a></li>
+																</ul>
+															</div>
+														</div>
+														 >
+													</div>
+													<!--new_message_head-->
+
+														<div class="chat_area">
+															<ul class="list-unstyled" id="messageList">
+																<li class="left clearfix"><span
+																	class="chat-img1 pull-left"> <strong
+																		id="messageLogin"></strong></span>
+																	<div class="chat-body1 clearfix">
+																		<p id="messageContent"></p>
+																	</div></li>
+															</ul>
+														</div>
+														<!--chat_area-->
+														<div class="message_write">
+															<form id="registerForm" action="javascript:sendMessage();">
+																<div class="form-group">
+																	<input type="text" class="form-control"
+																		id="messageText">
+																</div>
+																<div class="text-center">
+																	<button type="submit" class="btn btn-default">envoyer</button>
+																</div>
+															</form>
+															<!--  <textarea class="form-control" placeholder="ecrire ici"
+																id="messageText"></textarea>
+															<div class="clearfix"></div>
+															<div class="chat_bottom">
+																<button onclick="sendMessage()"
+																	class="pull-right btn btn-success">Send</button>
+															</div>-->
+														</div>
+													</div>
+												</div>
+												<!--message_section-->
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer area-->
+		<div class="footer-area" id="footer"></div>
+
+		<script src="assets/js/modernizr-2.6.2.min.js"></script>
+		<script src="assets/js/jquery-1.10.2.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/bootstrap-select.min.js"></script>
+		<script src="assets/js/bootstrap-hover-dropdown.js"></script>
+		<script src="assets/js/easypiechart.min.js"></script>
+		<script src="assets/js/jquery.easypiechart.min.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/wow.js"></script>
+		<script src="assets/js/icheck.min.js"></script>
+		<script src="assets/js/price-range.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/chat.js"></script>
+</body>
+</html>
